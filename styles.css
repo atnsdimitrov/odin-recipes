@@ -1,0 +1,158 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0; /* removes the occasional top spacing of 8px, some browsers would apply */
+    font-family: sans-serif; /* fall back font for clean modern look */
+    line-height: 1.5; /* inherits line hight from the body */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem; /* scalable*/
+    padding: 0.25rem 0.25rem;
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+h2 {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+.container {
+    padding: 1.2rem; /* nice on all devices */
+    width: 20rem;
+    max-width: 1200px;
+    /* margin: 0 auto; /*centers the container */
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container a {
+    color: aliceblue;
+    font-weight: 400;
+}
+
+.container a :hover {
+    color: blue;
+}
+
+.lasagna-container {
+    background-color: rgb(85, 126, 237);
+}
+
+.chicken-container {
+    background-color: rgb(85, 186, 237);
+}
+
+.banana-container {
+    background-color: rgb(73, 50, 124);
+}
+
+.button {
+    padding: 0.5em 1em; /* scales with the text*/
+    background-color: rgb(103, 126, 161);
+    color: white;
+    border: none;
+    border-radius: 0.25rem; /* round */
+    cursor: pointer; /* change the appearance of the cursor when it hovers */
+}
+
+.button:hover {
+    background-color: rgb(166, 160, 237);
+}
+
+.highlight {
+    background-color: bisque;
+}
+
+.description {
+    background-color: rgb(223, 234, 206);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.ingredients {
+    text-decoration: solid;
+    color: rgb(53, 55, 56);
+    background-color: rgb(235, 218, 196);
+    padding: 2rem;
+    font-style: italic;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+    counter-reset: step-counter;
+}
+
+.steps {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-left: 5px solid rgb(166, 160, 237);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 2rem auto;
+    width: 80%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.steps li {
+    margin-bottom: 1rem;
+}
+
+
+/*
+.step {
+    background-color: #fff4e6;
+    border-left: 5px solid #ffa94d;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+    padding-left: 2rem;
+    /* Reduce this to allow space for the number 
+}
+
+.step::before {
+    position: absolute;
+    left: -6rem;
+    /* Move the number outside the card 
+    top: 0.8rem;
+    counter-increment: step-counter;
+    content: counter(step-counter, upper-roman) ".";
+    font-size: 1.6rem;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #ffa94d;
+    width: 4rem;
+    text-align: right;
+}
+*/
+
+/*
+*{
+    outline: 2px solid red;
+}
+
+*/
